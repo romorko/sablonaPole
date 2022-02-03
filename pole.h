@@ -21,7 +21,7 @@ public:
     Pole();
     ~Pole(); //destruktor uvolni pamat po zaniknuti objektu
     Pole(unsigned kolko);
-    Any operator[](unsigned index);
+    Any &operator[](unsigned index);
     Any operator[](const unsigned index) const;
     bool push(Any hodnota);
     void printPole() const;
@@ -54,7 +54,7 @@ Pole<Any, pocet>::Pole(unsigned int kolko)
 }
 
 template<typename Any, unsigned int pocet> //pretazeny operator aby sa dalo priamo pristupovat k prvkom array
-Any Pole<Any, pocet>::operator[](unsigned int index)
+Any &Pole<Any, pocet>::operator[](unsigned int index)
 {
     return array[index];
 }
