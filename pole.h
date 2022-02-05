@@ -26,7 +26,7 @@ public:
     explicit Pole(unsigned kolko);
     Any &operator[](unsigned index);
     Any operator[](unsigned index) const;
-    bool push(Any hodnota);
+    bool push_back(Any hodnota);
     bool in(Any hladam) const;//zisti ci je prvok v poli
     Any max() const;
     Any min() const;
@@ -75,7 +75,7 @@ Any Pole<Any, pocet>::operator[](unsigned int index) const
 }
 
 template<typename Any, unsigned int pocet>
-bool Pole<Any, pocet>::push(Any hodnota)
+bool Pole<Any, pocet>::push_back(Any hodnota)
 {
     if(curIndex<maxIndex) //pocet prvkov je mensi ako mam pripravene
     {

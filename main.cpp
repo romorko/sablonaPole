@@ -4,21 +4,21 @@
 int main()
 {
     Pole<int,3> moje;
-    moje.push(1);
-    moje.push(13);
-    moje.push(5);
-    moje.push(8);
-    moje.push(10);
-    moje.push(11);
-    moje.push(2);
-    moje.push(19);
-    moje.push(14);
-    moje.push(0);
-    moje.push(21);
-    moje.push(2);
-    moje.push(23);
-    moje.push(16);
-    moje.push(25);
+    moje.push_back(1);
+    moje.push_back(13);
+    moje.push_back(5);
+    moje.push_back(8);
+    moje.push_back(10);
+    moje.push_back(11);
+    moje.push_back(2);
+    moje.push_back(19);
+    moje.push_back(14);
+    moje.push_back(0);
+    moje.push_back(21);
+    moje.push_back(2);
+    moje.push_back(23);
+    moje.push_back(16);
+    moje.push_back(25);
     moje[3]=44;
     std::cout<<moje<<std::endl;
     moje.sort('d');
